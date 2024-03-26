@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: #F8F9FF;
+}
+
+.mid_width{
+    width: 1200px;
+    margin: auto;
+}
+
+/* hero */
+.hero_section{
+    background: url(images/hero_BG.png);
+    min-height: 100vh;
+    height: fit-content;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    position: relative;
+}
+.hero_logo_wrapper{
+    min-height: 20vh;
+    z-index: 999;
+}
+#hero_logo{
+    width: 180px;
+    height: auto;
+}
+.hero_text_wrapper{
+    min-height: 50vh;
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+.hero_main_text{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.hero_main_text span{
+    display: block;
+    color: #521CC6;
+}
+.hero_sub_text{
+    font-size: 15px;
+    opacity: .5;
+    width: 80%;
+    margin: 20px 0;
+}
+.contact_us_btn{
+    background: black;
+    color: white;
+    border-radius: 2px;
+    padding: 10px 30px;
+    width: fit-content;
+}
+@media(max-width:992px){
+    .hero_section{
+        background-position: right;
+        padding: 1rem;
+        position: relative;
+    }
+    #hero_logo{
+        width: 100px;
+    }
+    .hero_text_wrapper{
+        width: 100%;
+    }
+    .hero_main_text{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .hero_sub_text{
+        width: 100%;
+        margin: 10px 0 20px 0;
+    }
+    .mid_width{
+        width: 95%;
+    }    
+    .what_we_do_section,.how_it_works_section,.partners_section{
+        padding: 20px !important;
+    }    
+    #partners_img{
+        width: 100%;
+    }
+    #view_list_btn{
+        width: 99% !important;
+    }
+}
+@media(min-width: 992px) and (max-width: 1200px){
+    .mid_width{
+        width: 80%;
+    }
+}
+
+/* other info */
+.other_info_section{
+    padding: 1rem 0;
+}
+.other_info_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center !important;
+}
+.oth_info_header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.oth_info_img{
+    height: 50px;
+    width: auto;
+}
+.oth_info_text{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Montagu Slab", serif !important;
+    color: #521CC6;
+}
+.oth_info_subtext p{
+    font-size: 1rem;
+    font-weight: 550;
+    text-align: center;
+}
+.line_col hr{
+    height: 90%;
+    width: 10px;
+    border: none;
+    border-left: 3px solid #aeaeae;
+    margin: 0 auto;
+}
+
+
+/* what we do */
+.what_we_do_section{
+    padding: 2rem;
+    background-color: white;
+}
+.section_title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #521CC6;
+}
+.section_sub_title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.wwd_points li{
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #00000084;
+}
+
+
+/* how it works */
+.how_it_works_section{
+    padding: 2rem;
+}
+.g-c-section{
+    margin-bottom: 20px;
+}
+.sub-titile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.index{
+    font-weight: 700;
+    font-size: 17px;
+    border: 3px dashed #521cc676;
+    border-radius: 50%;
+    color: #521CC6;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.content-heading{
+    color: #521CC6;
+    font-weight: 600;
+}
+.section-content{
+    display: flex;
+    align-items: top;
+}
+.section-content-line{
+    border-left: 2px dashed #521cc676;
+    width: fit-content;
+    margin: 0 40px 0 20px;
+}
+.section-content p{
+    font-size: 1.1rem;
+    opacity: .5;
+    font-weight: 600;
+}
+
+
+/* our partners */
+.partners_section{
+    padding: 2rem;
+}
+#partners_img{
+    width: 70%;
+    margin: 20px 0;
+}
+#view_list_btn{
+    width: 30%;
+    min-width: fit-content;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    background: #521CC6;
+    border-radius: 2px;
+    border: none;
+}
+
+
+/* partner info */
+.partner_info_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    margin-bottom: 10px;
+}
+.partner_info_left{
+    display: flex;
+    gap: 10px;
+    width: 80%;
+}
+.modal_icons{
+    height: 30px;
+    width: auto;
+}
+.shop_icon{
+    margin-top: 10px;
+}
