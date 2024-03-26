@@ -11,6 +11,14 @@
 body{
     background-color: #F8F9FF;
 }
+body::-webkit-scrollbar{
+    width: 10px;
+    background: #fff;
+}
+body::-webkit-scrollbar-thumb{
+    width: 100%;
+    background: #200e4a;
+}
 
 .mid_width{
     width: 1200px;
